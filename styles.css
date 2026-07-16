@@ -79,7 +79,7 @@ h2 { margin-bottom: 18px; font-size: clamp(32px, 4.2vw, 52px); line-height: 1.14
 .campus-photo img { width: 100%; height: 100%; min-height: 420px; object-fit: cover; display: block; }
 .campus-photo span { position: absolute; bottom: 16px; left: 16px; color: var(--white); font-size: 12px; background: rgba(21,33,31,.75); padding: 5px 9px; }
 .campus-copy p:not(.section-label) { max-width: 390px; color: #475450; }
-.inline-link { display: inline-flex; gap: 8px; align-items: center; margin-top: 16px; color: var(--red); font-weight: 700; }
+.inline-link { display: inline-flex; gap: 8px; align-items: center; margin-top: 16px; padding: 0; color: var(--red); background: transparent; border: 0; font-weight: 700; cursor: pointer; }
 
 .planning-section { padding: 100px 0; color: var(--white); background: #1e3330; }
 .planning-section .section-label { color: #b8d5c6; }

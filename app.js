@@ -40,14 +40,14 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   const data = new FormData(form);
   const body = [
-    "您好，我想咨询哈佛大学申请规划。",
+    "您好，我想咨询哈佛大学短期交流项目。",
     "",
     `姓名：${data.get("name")}`,
     `当前阶段：${data.get("stage")}`,
-    `意向学位：${data.get("degree")}`,
+    `意向方向：${data.get("degree")}`,
     `重点想了解：${data.get("message") || "未填写"}`,
   ].join("\n");
-  const subject = "哈佛大学申请咨询";
+  const subject = "哈佛大学短期交流项目咨询";
   window.location.href = `mailto:info@ruieredu.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   dialog.close();
   form.reset();
