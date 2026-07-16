@@ -5,6 +5,18 @@ const menuToggle = document.querySelector("[data-menu-toggle]");
 const mobileMenu = document.querySelector("[data-mobile-menu]");
 const form = document.querySelector("[data-consult-form]");
 
+const heroSecondaryAction = document.querySelector(".hero-actions .secondary-button");
+
+if (heroSecondaryAction?.tagName === "BUTTON") {
+  const schoolLink = document.createElement("a");
+  schoolLink.className = "secondary-button";
+  schoolLink.href = "https://www.harvard.edu/";
+  schoolLink.target = "_blank";
+  schoolLink.rel = "noreferrer";
+  schoolLink.innerHTML = '访问学校官网 <i data-lucide="external-link"></i>';
+  heroSecondaryAction.replaceWith(schoolLink);
+}
+
 openers.forEach((button) => {
   button.addEventListener("click", () => {
     mobileMenu.hidden = true;
