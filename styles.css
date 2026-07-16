@@ -19,9 +19,8 @@ a { color: inherit; text-decoration: none; }
 .page-width { width: var(--page); margin-inline: auto; }
 
 .topbar { position: sticky; top: 0; z-index: 20; height: 72px; padding: 0 max(24px, calc((100% - 1120px) / 2)); display: flex; align-items: center; gap: 28px; background: rgba(246,248,247,.95); border-bottom: 1px solid rgba(21,33,31,.1); backdrop-filter: blur(12px); }
-.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 15px; white-space: nowrap; }
-.brand small { display: block; font-size: 9px; color: var(--muted); line-height: 1.1; }
-.brand-mark { width: 31px; height: 31px; display: grid; place-items: center; color: var(--white); background: var(--red); font-family: Georgia, serif; font-size: 19px; }
+.brand { display: inline-flex; align-items: center; flex: 0 0 auto; }
+.brand img { display: block; width: 142px; height: auto; }
 .desktop-nav { display: flex; align-items: center; gap: 24px; margin-left: auto; font-size: 14px; }
 .desktop-nav a { color: #3e4c48; }
 .desktop-nav a:hover, .inline-link:hover { color: var(--red); }
@@ -124,6 +123,7 @@ h2 { margin-bottom: 18px; font-size: clamp(32px, 4.2vw, 52px); line-height: 1.14
 @media (max-width: 760px) {
   :root { --page: min(100% - 32px, 1120px); }
   .topbar { height: 64px; padding-inline: 16px; }
+  .brand img { width: 128px; }
   .desktop-nav, .desktop-cta { display: none; }
   .menu-button { display: inline-grid; }
   .mobile-menu { top: 64px; }
